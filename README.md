@@ -2,8 +2,11 @@
 ## 1. Centos 7 修改SSH端口号
 
 step1 修改/etc/ssh/sshd_config
+
 vi /etc/ssh/sshd_config
+
 #Port 22         //这行去掉#号
+
 Port 20000      //下面添加这一行
 
 
