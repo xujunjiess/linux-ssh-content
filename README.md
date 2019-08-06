@@ -1,5 +1,5 @@
 
-## 1. Centos 7 修改SSH端口号
+## Centos 7 修改SSH端口号
 
 ### step1 、修改/etc/ssh/sshd_config
 ```bash
