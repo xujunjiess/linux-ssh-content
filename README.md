@@ -31,6 +31,9 @@ step3 、重启ssh
 
 systemctl restart sshd.service
 
+step4、连接ssh
+
+ssh root@192.168.11.237 -p 20000
 
 
 
