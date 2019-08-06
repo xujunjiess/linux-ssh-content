@@ -32,12 +32,13 @@ ssh_port_t                    tcp    20000, 22
 ```
 
 ### step3 、重启ssh
-
+```bash
 systemctl restart sshd.service
 
+```
 ### step4、连接ssh
-
+```bash
 ssh root@192.168.11.237 -p 20000
-
+```
 
 
