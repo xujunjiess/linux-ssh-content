@@ -47,7 +47,7 @@ ssh root@192.168.11.237 -p 20000
     #ssh-copy-id root@192.168.11.251
 
     #远程251主机
-    /root/.ssh 会多一个 authorized_keys 文件
+    目录 /root/.ssh 会多一个 authorized_keys 文件
 
 
 ### 更多linux 网络攻防资料请联系我
