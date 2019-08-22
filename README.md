@@ -46,7 +46,7 @@ ssh root@192.168.11.237 -p 20000
     #ssh-keygen -t rsa
     #ssh-copy-id root@192.168.11.251
 
-    #远程B主机
+    #远程251主机
     /root/.ssh 会多一个 authorized_keys 文件
 
 
