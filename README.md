@@ -41,6 +41,15 @@ systemctl restart sshd.service
 ssh root@192.168.11.237 -p 20000
 ```
 
+### step5、本地主机免密登陆远程主机
+    #本地A主机
+    #ssh-keygen -t rsa
+    #ssh-copy-id root@192.168.11.251
+
+    #远程B主机
+    /root/.ssh 会多一个 authorized_keys 文件
+
+
 ### 更多linux 网络攻防资料请联系我
 
 <img src="my.jpg" width="50%" height="50%"/>
