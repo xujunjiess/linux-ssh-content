@@ -52,6 +52,7 @@ ssh root@192.168.11.237 -p 20000
 ### step6、mac 系统设置支持ssh 远程登录
     1. 进入系统偏好设置--共享--勾选远程登录
     2. 也可以设置限定的用户登录
+    3. 获取mac系统root 权限  #sudo passwd root  #输入登录密码 #重新输入root密码
 
 ## 自定义命令 vi /root/.bashrc
 
