@@ -49,6 +49,10 @@ ssh root@192.168.11.237 -p 20000
     #远程251主机
     目录 /root/.ssh 会多一个 authorized_keys 文件
 
+注意：针对个别发行版linux 禁用ssh root账号处理方案
+ssh配置是否对root进行特殊设置，修改/etc/ssh/sshd_config文件中
+PermitRootLogin without-password将 without-password改为yes；
+
 ### step6、mac 系统设置支持ssh 远程登录
     1. 进入系统偏好设置--共享--勾选远程登录
     2. 也可以设置限定的用户登录
