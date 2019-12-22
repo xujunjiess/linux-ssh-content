@@ -63,6 +63,33 @@ PermitRootLogin without-password将 without-password改为yes；
 alias 42="ssh root@testxiu.xiu.com"
 
 
+### step7 下载和上传命令简述
+    1. rsync 增量上传和下载
+
+    rsync -azv /tmp root@192.168.11.66:/usr/local/my_content/
+    rsync -azv root@192.168.11.66:/usr/local/my_content /tmp/
+
+    2. scp 全量上传和下载
+    scp -r /tmp root@192.168.11.66:/usr/local/my_content/
+    scp -r root@192.168.11.66:/usr/local/my_content /tmp/
+
+    3. curl 上传和下载
+    curl -T tieba1.JPG -u 用户名:密码 ftp://www.baidu.com/img/ 
+    curl -C -O http://www.baidu.com/tieba1.JPG
+    
+    大文件分块下载
+    有时候下载的东西会比较大，这个时候我们可以分段下载
+
+    # curl -r 0-100 -o tieba1_part1.JPG http://www.baidu.com/tieba1.JPG
+
+    # curl -r 100-200 -o tieba1_part2.JPG http://www.baidu.com/tieba1.JPG
+
+    # curl -r 200- -o tieba1_part3.JPG http://www.baidu.com/tieba1.JPG
+
+    # cat tieba1_part* > tieba1.JPG
+    
+
+
 
 ### 更多linux 网络攻防资料请联系我
 
