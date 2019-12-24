@@ -60,7 +60,7 @@ PermitRootLogin without-password将 without-password改为yes；
 
 ## 自定义命令 vi /root/.bashrc
 
-alias 42="ssh root@testxiu.xiu.com"
+alias 42="ssh root@test163.com"
 
 
 ### step7 下载和上传命令简述
